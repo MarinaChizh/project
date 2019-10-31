@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Окт 29 2019 г., 20:15
--- Версия сервера: 5.7.23
+-- Время создания: Окт 31 2019 г., 20:21
+-- Версия сервера: 8.0.12
 -- Версия PHP: 7.2.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -21,8 +21,8 @@ SET time_zone = "+00:00";
 --
 -- База данных: `order`
 --
-CREATE SCHEMA IF NOT EXISTS `order` DEFAULT CHARACTER SET utf8 ;
-USE `order` ;
+CREATE DATABASE IF NOT EXISTS `order` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `order`;
 
 -- --------------------------------------------------------
 
@@ -30,14 +30,15 @@ USE `order` ;
 -- Структура таблицы `cars`
 --
 
-CREATE TABLE IF NOT EXISTS `cars` (
+DROP TABLE IF EXISTS `cars`;
+CREATE TABLE `cars` (
   `id` int(11) NOT NULL,
-  `car brand` varchar(45) DEFAULT NULL,
+  `carbrand` varchar(45) DEFAULT NULL,
   `number` varchar(45) DEFAULT NULL,
-  ` trailer number` varchar(45) DEFAULT NULL,
+  `trailernumber` varchar(45) DEFAULT NULL,
   `tone` varchar(45) DEFAULT NULL,
-  `type` varchar(45) DEFAULT NULL,
-  `fio driver` varchar(45) DEFAULT NULL
+  `type` varchar(125) DEFAULT NULL,
+  `fiodriver` varchar(125) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -46,7 +47,8 @@ CREATE TABLE IF NOT EXISTS `cars` (
 -- Структура таблицы `orders`
 --
 
-CREATE TABLE IF NOT EXISTS `orders` (
+DROP TABLE IF EXISTS `orders`;
+CREATE TABLE `orders` (
   `id` int(11) NOT NULL,
   `name` varchar(45) DEFAULT NULL,
   `unp` varchar(45) DEFAULT NULL,
@@ -73,7 +75,23 @@ ALTER TABLE `cars`
 --
 ALTER TABLE `orders`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `cars_id` (`cars_id`);
+  ADD KEY `fk_orders_cars_idx` (`cars_id`);
+
+--
+-- AUTO_INCREMENT для сохранённых таблиц
+--
+
+--
+-- AUTO_INCREMENT для таблицы `cars`
+--
+ALTER TABLE `cars`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT для таблицы `orders`
+--
+ALTER TABLE `orders`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- Ограничения внешнего ключа сохраненных таблиц
@@ -83,7 +101,7 @@ ALTER TABLE `orders`
 -- Ограничения внешнего ключа таблицы `orders`
 --
 ALTER TABLE `orders`
-  ADD CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`cars_id`) REFERENCES `cars` (`id`);
+  ADD CONSTRAINT `fk_orders_cars` FOREIGN KEY (`cars_id`) REFERENCES `cars` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

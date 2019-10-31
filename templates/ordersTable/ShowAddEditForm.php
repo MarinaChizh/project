@@ -5,12 +5,12 @@
                 <?php
                 foreach ($columnsNames as $name) {
                     if ($name != 'id') {
-                        if ($name == 'user_group_id') {
+                        if ($name == 'cars_id') {
 
                             echo "<label>" . (empty($tableHeaders[$name]) ? $name : $tableHeaders[$name]);
-                            echo "<br><select name='user_group_id'>";
-                            foreach ($userGroup as $id => $groupName) {
-                                echo "<option value='$id'>$groupName</option>";
+                            echo "<br><select name='cars_id'>";
+                            foreach ($cars as $id => $carsName) {
+                                echo "<option value='$id'>$carsName</option>";
                             }
 
                             echo "</select></lable><br>";

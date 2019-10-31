@@ -2,9 +2,9 @@
 
 namespace App\Controller;
 
-class FeedBackController extends AbstractTableController
+class CarsController extends AbstractTableController
 {
-    protected $tableName = 'feedbacktable';
+    protected $tableName = 'cars';
     protected $viewPatternsPath = 'templates/table/';
     protected $pageSize = 4;
 }
