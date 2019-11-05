@@ -2,12 +2,15 @@
     "adm": [],
     "usr": [
         "UserGroupController",
-        "UsersController"
+        "UsersController",
+        "CarsController"
     ],
     "dft": [
         "tableOneController",
         "tableTwoController",
         "UserGroupController",
-        "UsersController"
+        "UsersController",
+        "CarsController",
+        "OrdersController"
     ]
 }
