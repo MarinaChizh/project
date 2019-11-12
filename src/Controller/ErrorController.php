@@ -11,7 +11,7 @@ class ErrorController extends AbstractController
     {
         $this->accessDenied();
         $this->render("error", [
-            'text' => 'Access Denied'
+            'text' => 'Зарегистрируйтесь на сайте'
         ]);
         exit();
     }

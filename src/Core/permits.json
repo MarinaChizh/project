@@ -2,8 +2,8 @@
     "adm": [],
     "usr": [
         "UserGroupController",
-        "UsersController",
-        "CarsController"
+        "UsersController"
+        
     ],
     "dft": [
         "tableOneController",
