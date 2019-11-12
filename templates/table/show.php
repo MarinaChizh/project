@@ -8,9 +8,9 @@ $paginationHTML .= "<li class='page-item'><a class='page-link' href='" . $pagina
 
 echo $paginationHTML;
 
-echo "<div class='container'><div class='row justify-content-center'>";
+echo "<div class='container'><div class='row justify-content-center'><div class='table-responsive'>";
 
-echo "<table class='table table-striped table-dark'>";
+echo "<table class='table table-bordered table-dark'>";
 
 echo "<tr>";
 foreach ($tableHeaders as $fieldName => $th ) {
@@ -29,6 +29,6 @@ foreach ($table as $row) {
 }
 echo "</table>";
 echo "<a href='$addLink' class='btn btn-success'>Add new</a>";
-echo "</div></div>";
+echo "</div></div></div>";
 echo $paginationHTML;
 
