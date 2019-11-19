@@ -6,3 +6,19 @@
     transform: translate(-50%, -50%);
     
 }
+
+.mainimg{
+    position: relative;
+    display:inline-block;
+}
+
+.mainimg span{
+    display:inline-block;
+    position:absolute;
+    top:30px;
+    left:0px;
+    font-size: 18px;
+}
+ body{
+     background-color: blue;
+ }

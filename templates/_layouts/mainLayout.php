@@ -25,31 +25,30 @@ use App\View\Helper\HTML;
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="<?= Dispatcher::dispatcher()->encodeUri("site/home") ?>">TransCompany</a>
+
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="<?= Dispatcher::dispatcher()->encodeUri("site/home") ?>">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="<?= Dispatcher::dispatcher()->encodeUri("site/home") ?>">Главная <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?= Dispatcher::dispatcher()->encodeUri("site/about") ?>">About</a>
-        </li>
-
-        <li class="nav-item">
-          <a class='nav-link' href='<?= Dispatcher::dispatcher()->encodeUri('cars/show', ['page' => 1]) ?>'>Cars</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="<?= Dispatcher::dispatcher()->encodeUri("orders/show", ['page' => 1]) ?>">Orders</a>
+          <a class="nav-link" href="<?= Dispatcher::dispatcher()->encodeUri("site/about") ?>">О нас</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?= Dispatcher::dispatcher()->encodeUri("site/loginform") ?>">Login</a>
+          <a class='nav-link' href='<?= Dispatcher::dispatcher()->encodeUri('cars/show', ['page' => 1]) ?>'>Автомобили</a>
         </li>
-
         <li class="nav-item">
-          <a class="nav-link" href="<?= Dispatcher::dispatcher()->encodeUri("signup/showform") ?>">Sign Up</a>
+          <a class="nav-link" href="<?= Dispatcher::dispatcher()->encodeUri("orders/show", ['page' => 1]) ?>">Заказы</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="<?= Dispatcher::dispatcher()->encodeUri("site/loginform") ?>">Войти на сайт</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="<?= Dispatcher::dispatcher()->encodeUri("signup/showform") ?>">Регистрация</a>
         </li>
 
 
@@ -74,7 +73,7 @@ use App\View\Helper\HTML;
   <!-- <div class="container"> -->
 
   <div id="user_state" class="float-right">
-    <?= Auth::currentUserInfo() . " " . (isset($_SESSION['user']) ? "<a href='?a=logout'>Logout</a>" : "") ?>
+    <?= Auth::currentUserInfo() . " " . (isset($_SESSION['user']) ? "<a href='?a=logout'>Выход</a>" : "") ?>
   </div>
   <br />
   <!-- </div> -->
