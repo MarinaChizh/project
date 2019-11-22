@@ -1,0 +1,43 @@
+.mainimg{
+    position: relative;
+    display:inline-block;
+}
+
+.mainimg span{
+    display:inline-block;
+    position:absolute;
+    top:150px;
+    left:150px;
+    font-size: 18px;
+    color:#FFF;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:80px;
+    background-color:rgba(0,0,0,.4);
+    padding: 20px 30px;
+  margin: 10px 20px;
+}
+
+.zakaz a{
+    text-decoration: none;
+  outline: none;
+  display: inline-block;
+  color: black;
+  padding: 20px 30px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0,0,0,.1);
+  transition: .5s;
+}
+
+.zakaz a:hover {background-position: right center;}
+
+body{
+    background: url(auto.jpg); 
+    
+}
