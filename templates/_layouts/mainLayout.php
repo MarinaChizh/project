@@ -50,20 +50,14 @@ use App\View\Helper\HTML;
         <li class="nav-item">
           <a class="nav-link" href="<?= Dispatcher::dispatcher()->encodeUri("signup/showform") ?>">Регистрация</a>
         </li>
-
-
         <?php if ($deleteEditAccess) {
-          echo "
-        <li class='nav-item dropdown'>
-          <a class='nav-link dropdown-toggle' href='#' id='navbarDropdownMenuLink' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
-            US
-          </a>
-          <div class='dropdown-menu' aria-labelledby='navbarDropdownMenuLink'>
-            <a class='dropdown-item' href='<?= Dispatcher::dispatcher()->encodeUri('usergroup/show', ['page' => 1]) ?>'>User_group</a>
-            <a class='dropdown-item' href='<?= Dispatcher::dispatcher()->encodeUri('users/show', ['page' => 1]) ?>'>User</a>
-          </div>
+          echo"
+        <li class='nav-item'>
+        <a class='nav-link' href='<?= Dispatcher::dispatcher()->encodeUri('usergroup/show', ['page' => 1]) ?>'>User_group</a>
         </li>
-        ";
+        <li class='nav-item'>
+        <a class='nav-link' href='<?= Dispatcher::dispatcher()->encodeUri('users/show', ['page' => 1]) ?>'>User</a> 
+        </li>";
         }
         ?>
         
