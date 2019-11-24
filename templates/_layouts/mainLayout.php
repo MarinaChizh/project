@@ -17,6 +17,8 @@ use App\View\Helper\HTML;
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title><?= $title ?></title>
   <link rel="stylesheet" href="public/css/style.css">
+  <link rel="stylesheet" href="public/css/style_show.css">
+  <link rel="stylesheet" href="public/css/style_singup.css">
 
 
 
@@ -47,16 +49,21 @@ use App\View\Helper\HTML;
         <li class="right-item">
           <a href="<?= Dispatcher::dispatcher()->encodeUri("signup/showform") ?>">Регистрация</a>
         </li>
-        <?php if ($deleteEditAccess) {
-          echo"
-        <li class='right-item'>
-        <a href='<?= Dispatcher::dispatcher()->encodeUri('usergroup/show', ['page' => 1]) ?>'>User_group</a>
-        </li>
-        <li>
-        <a href='<?= Dispatcher::dispatcher()->encodeUri('users/show', ['page' => 1]) ?>'>User</a> 
-        </li>";
-        }
-        ?>
+        
+ <?php
+ if ($deleteEditAccess) {
+  echo 
+    "<li class='right-item'>
+      <a href=\"<?= Dispatcher::dispatcher()->encodeUri('usergroup/show', ['page' => 1]) ?>\">User_group</a>
+    </li>
+    <li>
+      <a href=\"<?= Dispatcher::dispatcher()->encodeUri('users/show', ['page' => 1]) ?>\">User</a>
+    </li>";
+ }
+ ?>       
+
+
+      
       </ul>
       <a class="navbar-logo" href="<?= Dispatcher::dispatcher()->encodeUri("site/home") ?>">
       <img src='public/css/123.png' width="300" height="220">

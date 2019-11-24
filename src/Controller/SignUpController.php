@@ -37,7 +37,7 @@ class SignUpController extends AbstractController
             $this->redirect('?t=' . $this->shortClassName() . '&a=showform');
         }
 
-        $userGroupId = (new Table('user_group', DB::Link(Conf::MYSQL)))->get(['cod' => 'dft'])[0]['id'];
+        $userGroupId = (new Table('user_group', DB::Link(Conf::MYSQL)))->get(['cod' => 'usr'])[0]['id'];
 
         (new Table('users', DB::Link(Conf::MYSQL)))->add([
             "name" => $_POST["name"],

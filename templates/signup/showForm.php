@@ -5,7 +5,9 @@
             } 
         ?>
     </div>
-    <form action="<?= $SignUpURL ?>" method="POST" class="text-center border border-light p-5 ">
+    <form action="<?= $SignUpURL ?>" method="POST" class="transparent">
+    <div class="form-inner">
+    <h3>Регистрация</h3>
         <div class="form-group">
             <input type="text" name="name" value="<?= $newSignUpDate['name'] ?? '' ?>" placeholder = "Введите имя" class="form-control">
         </div> 
@@ -22,5 +24,6 @@
             <input type="password" name="passrepeat" placeholder = "Повторите пароль" class="form-control">         
         </div>
             <input type="submit" value="Регистрация" class="btn btn-primary">
+        </div>
     </form>
     
