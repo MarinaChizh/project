@@ -1,0 +1,29 @@
+.contact_form{position: relative;
+  margin-bottom: 40px;}
+.container{
+    display:inline-block;
+    position:absolute;
+    top:350px;
+    left:500px;
+}
+.contact_form input {
+    display: block;
+    width: 100%;
+    padding: 0 15px;
+    margin: 10px 0 15px;
+    border-width: 0;
+    line-height: 40px;
+    border-radius: 20px;
+    color: white;
+    background: rgba(255,255,255,.2);
+    font-family: 'Roboto', sans-serif;
+  }
+
+.contact_form label {
+    margin-bottom: 5px;
+    color: #FAAB1B; 
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+
+  

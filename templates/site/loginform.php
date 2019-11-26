@@ -3,18 +3,22 @@ use App\Core\Dispatcher;
 /** @var string $text */
 /** @var string $loginURL */
 ?>
-
-<div>
-    <form action="<?= $loginURL ?>" method="POST" class="text-center border border-light p-5">
-        <label>
-            <input class="form-control mb-4"type="text" name="user" placeholder="User">
-        </label><br/>
-        <label>
-            <input class="form-control mb-4"type="password" name="pass" placeholder="Password">
-        </label><br/>
-        <input class="btn btn-info my-4" type="submit" value="Login">  <br/>
-        <div class="btn btn-info my-4">
+<link rel="stylesheet" href="public/css/style_login.css">
+<link rel="stylesheet" href="public/css/style.css">
+<!-- <div> -->
+<div class="two"><h1>TransLogist</h1></div>
+<div class="tex"><h1>Тех поддержка</h1></div>
+    <form action="<?= $loginURL ?>" method="POST" class="ui-form">
+    <h3>Войти на сайт</h3>
+        <div class="form-row">
+            <input type="text" name="user" id="user" required autocomplete="off"><label for="user">User</label>
+        </div>
+        <div class="form-row">
+            <input type="password" name="pass" id="password" required autocomplete="off" ><label for="password">Пароль</label>
+        </div>
+        <p><input type="submit" value="Войти"></p>  <br/>
+        <div class="button-home">
         <a href="<?= Dispatcher::dispatcher()->encodeUri("site/home") ?>">Home</a> 
         </div> 
     </form>
-</div>
+<!-- </div> -->
