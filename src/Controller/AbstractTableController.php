@@ -37,7 +37,8 @@ abstract class AbstractTableController extends AbstractController
             'controllerName' => $this->shortClassName(),
             'tableHeaders' => $this->table->getColumnsComments(),
             'deleteEditAccess' => ($_SESSION['user']['cod'] == 'adm')? true : false,
-            'regist' => ($_SESSION['user']['cod'] == null)? true : false
+            'regist' => ($_SESSION['user']['cod'] == null)? true : false,
+            
 
 
         ]);

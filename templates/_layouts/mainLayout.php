@@ -63,11 +63,11 @@ use App\View\Helper\HTML;
 
           if ($deleteEditAccess) {
             echo
-          "<li class='right-item'>
-            <a href=" . Dispatcher::dispatcher()->encodeUri('usergroup/show', ['page' => 1]) . ">User_group</a>
+          "<li class='left-item'>
+            <a href=" . Dispatcher::dispatcher()->encodeUri('usergroup/show', ['page' => 1]) . ">Группа пользователей</a>
            </li>
            <li>
-            <a href=" . Dispatcher::dispatcher()->encodeUri('users/show', ['page' => 1]) . ">User</a>
+            <a href=" . Dispatcher::dispatcher()->encodeUri('users/show', ['page' => 1]) . ">Пользователи</a>
            </li>";
           }
           
