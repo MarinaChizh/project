@@ -13,10 +13,9 @@ use App\Core\Dispatcher;
 <div class="container">
 <div class="description">
    <h3>
-    Hello ,Welcome To My officail Website
+    Hello ,Welcome 
     <p>
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    Рады видеть на нашем сайте. Вы можете оставить свой заказ</p>
     <button class="btn btn-outline-secondary"><a href="<?= Dispatcher::dispatcher()->encodeUri("orders/show", ['page' => 1]) ?>" style="color: white">Оставить заказ</a></button>
    </h3>
   </div>
@@ -33,7 +32,7 @@ use App\Core\Dispatcher;
 <div class=" col-sm-4 col-md col-sm-4  col-12 col">
 <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
 <!--headin5_amrc-->
-<p class="mb10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+<p class="mb10">г.Витебск, ул. Терешковой, 11</p>
 <p><i class="fa fa-location-arrow"></i> logist </p>
 <p><i class="fa fa-phone"></i>  +375-33-3333333 </p>
 <p><i class="fa fa fa-envelope"></i> info@example.com  </p>
@@ -43,30 +42,30 @@ use App\Core\Dispatcher;
 
 
 <div class=" col-sm-4 col-md  col-6 col">
-<h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+<h5 class="headin5_amrc col_white_amrc pt2">Полезные ссылки</h5>
 <!--headin5_amrc-->
 <ul class="footer_ul_amrc">
-<li><a href="http://webenlance.com">Image Rectoucing</a></li>
-<li><a href="http://webenlance.com">Clipping Path</a></li>
-<li><a href="http://webenlance.com">Hollow Man Montage</a></li>
-<li><a href="http://webenlance.com">Ebay & Amazon</a></li>
-<li><a href="http://webenlance.com">Hair Masking/Clipping</a></li>
-<li><a href="http://webenlance.com">Image Cropping</a></li>
+<li><a href="">Ссылка</a></li>
+<li><a href="">Ссылка</a></li>
+<li><a href="">Ссылка</a></li>
+<li><a href="">Ссылка</a></li>
+<li><a href="">Ссылка</a></li>
+<li><a href="">Ссылка</a></li>
 </ul>
 <!--footer_ul_amrc ends here-->
 </div>
 
 
 <div class=" col-sm-4 col-md  col-6 col">
-<h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+<h5 class="headin5_amrc col_white_amrc pt2">Info</h5>
 <!--headin5_amrc-->
 <ul class="footer_ul_amrc">
-<li><a href="http://webenlance.com">Remove Background</a></li>
-<li><a href="http://webenlance.com">Shadows & Mirror Reflection</a></li>
-<li><a href="http://webenlance.com">Logo Design</a></li>
-<li><a href="http://webenlance.com">Vectorization</a></li>
-<li><a href="http://webenlance.com">Hair Masking/Clipping</a></li>
-<li><a href="http://webenlance.com">Image Cropping</a></li>
+<li><a href="">information</a></li>
+<li><a href="">information</a></li>
+<li><a href="">information</a></li>
+<li><a href="">information</a></li>
+<li><a href="">information</a></li>
+<li><a href="h">information</a></li>
 </ul>
 <!--footer_ul_amrc ends here-->
 </div>
@@ -77,9 +76,9 @@ use App\Core\Dispatcher;
 <!--headin5_amrc ends here-->
 
 <ul class="footer_ul2_amrc">
-<li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><p>Lorem Ipsum is simply dummy text of the printing...<a href="#">https://www.lipsum.com/</a></p></li>
-<li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><p>Lorem Ipsum is simply dummy text of the printing...<a href="#">https://www.lipsum.com/</a></p></li>
-<li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><p>Lorem Ipsum is simply dummy text of the printing...<a href="#">https://www.lipsum.com/</a></p></li>
+<li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><p>Lorem Ipsum is simply dummy text of the printing...<a href="#"></a></p></li>
+<li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><p>Lorem Ipsum is simply dummy text of the printing...<a href="#"></a></p></li>
+<li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><p>Lorem Ipsum is simply dummy text of the printing...<a href="#"></a></p></li>
 </ul>
 <!--footer_ul2_amrc ends here-->
 </div>
@@ -89,17 +88,17 @@ use App\Core\Dispatcher;
 
 <div class="container">
 <ul class="foote_bottom_ul_amrc">
-<li><a href="http://webenlance.com">Home</a></li>
-<li><a href="http://webenlance.com">About</a></li>
+<li><a href="<?= Dispatcher::dispatcher()->encodeUri("site/home") ?>">Home</a></li>
+<li><a href="<?= Dispatcher::dispatcher()->encodeUri("site/about") ?>">About</a></li>
 </ul>
 <!--foote_bottom_ul_amrc ends here-->
-<p class="text-center">Copyright @2019 | Designed With by <a href="#">Your Company Name</a></p>
+<p class="text-center">Copyright @2019 | Designed With by <a href="#">My</a></p>
 
 <ul class="social_footer_ul">
-<li><a href="http://webenlance.com"><i class="fab fa-facebook-f"></i></a></li>
-<li><a href="http://webenlance.com"><i class="fab fa-twitter"></i></a></li>
-<li><a href="http://webenlance.com"><i class="fab fa-linkedin"></i></a></li>
-<li><a href="http://webenlance.com"><i class="fab fa-instagram"></i></a></li>
+<li><a href="http://project/home"><i class="fab fa-facebook-f"></i></a></li>
+<li><a href="http://project/home"><i class="fab fa-twitter"></i></a></li>
+<li><a href="http://project/home"><i class="fab fa-linkedin"></i></a></li>
+<li><a href="http://project/home"><i class="fab fa-instagram"></i></a></li>
 </ul>
 <!--social_footer_ul ends here-->
 </div>

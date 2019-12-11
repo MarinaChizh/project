@@ -1,0 +1,24 @@
+.contact-form{
+    margin: 6em 0;
+    position: relative;  
+   }
+   .contact-form h3{
+    padding:2em 1px;
+    color: rgb(249, 0, 0); 
+   }
+   .contact-form .right{
+    max-width: 600px;
+   }
+   .contact-form .right .btn-secondary{
+    background:   rgb(249, 0, 0);
+    color: #fff;
+    border:0;
+   }
+   .contact-form .right .form-control::placeholder{
+    color: #888;
+    font-size: 16px;
+   }
+
+body{
+    background-color: rgb(172, 168, 168);
+}

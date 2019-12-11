@@ -12,12 +12,16 @@ class OrdersController extends AbstractTableController
     protected $tableName = 'orders';
     protected $viewPatternsPath = 'templates/table/';
     protected $pageSize = 3;
+    protected $a = true;
+    
     
     public function __construct()
     {
         parent::__construct();
         $this->table = new OrdersModel($this->tableName, DB::Link(Conf::MYSQL));
     }
+
+    
 
     public function actionShowEditForm()
     {

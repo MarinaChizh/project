@@ -13,6 +13,8 @@ abstract class AbstractTableController extends AbstractController
     protected $viewPatternsPath;
     protected $tableName;
     protected $pageSize;
+    protected $addButton = true;
+    protected $a = true;
 
     public function __construct()
     {
@@ -20,9 +22,12 @@ abstract class AbstractTableController extends AbstractController
         $this->table = new DbEntity($this->tableName, DB::Link(Conf::MYSQL));
     }
 
+    protected function showPrepare() {}
+    protected function showPreparee() {}
+
     public function actionShow()
     {
-
+        $this->showPrepare();
         $page = $_GET['page'] ?? 1;
         $table = $this->table->setPageSize($this->pageSize);
         $this->render("show", [
@@ -38,6 +43,8 @@ abstract class AbstractTableController extends AbstractController
             'tableHeaders' => $this->table->getColumnsComments(),
             'deleteEditAccess' => ($_SESSION['user']['cod'] == 'adm')? true : false,
             'regist' => ($_SESSION['user']['cod'] == null)? true : false,
+            'addButton' => $this->addButton,
+            'a' => ($tableName == 'cars')? true : false
             
 
 

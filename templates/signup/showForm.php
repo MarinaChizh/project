@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="public/css/style_login.css">
     <div>
         <?php
             foreach ($signUpErrors as $key => $value) {
@@ -5,25 +6,19 @@
             } 
         ?>
     </div>
-    <form action="<?= $SignUpURL ?>" method="POST" class="transparent">
-    <div class="form-inner">
-    <h3>Регистрация</h3>
-        <div class="form-group">
-            <input type="text" name="name" value="<?= $newSignUpDate['name'] ?? '' ?>" placeholder = "Введите имя" class="form-control">
-        </div> 
-        <div class="form-group">    
-            <input type="text" name="surname" value="<?= $newSignUpDate['surname'] ?? '' ?>" placeholder = "Введите фамилию" class="form-control">
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+        <div class="fadeIn first">
+            <h3>Регистрация</h3>
         </div>
-        <div class="form-group">    
-            <input type="text" name="login" value="<?= $newSignUpDate['login'] ?? '' ?>" placeholder = "Введите логин" class="form-control">
-        </div>    
-        <div class="form-group">
-            <input type="password" name="pass" placeholder = "Введите пароль" class="form-control">
-        </div>
-        <div class="form-group">
-            <input type="password" name="passrepeat" placeholder = "Повторите пароль" class="form-control">         
-        </div>
-            <input type="submit" value="Регистрация" class="btn btn-primary">
-        </div>
-    </form>
+        <form action="<?= $SignUpURL ?>" method="POST">
+            <input type="text" name="name" value="<?= $newSignUpDate['name'] ?? '' ?>" placeholder = "Введите имя"> 
+            <input type="text" name="surname" value="<?= $newSignUpDate['surname'] ?? '' ?>" placeholder = "Введите фамилию">
+            <input type="text" name="login" value="<?= $newSignUpDate['login'] ?? '' ?>" placeholder = "Введите логин">
+            <input type="text" name="pass" placeholder = "Введите пароль">
+            <input type="text" name="passrepeat" placeholder = "Повторите пароль">         
+            <input type="submit" value="Регистрация"  class="fadeIn fourth">
+        </form>
+    </div>
+</div>
     

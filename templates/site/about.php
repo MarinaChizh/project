@@ -3,7 +3,8 @@
 /** @var string $title */
 ?>
 <!-- <h1><?= ($title) ?></h1> -->
-<link rel="stylesheet" href="public/css/1.css">
+<link rel="stylesheet" href="public/css/about.css">
+
 <style>
 .col-lg-4{
     text-align:  center;
@@ -15,7 +16,7 @@
 
 <div class="row" id="about">
     <div class="col-lg-4 col-md-4 col-sm-12">
-        <img align="center" src="public/css/director.webp" class="img-fluid">
+        <img src="public/css/director.webp" class="img-fluid">
         <span class="text-justify">Director Mr.Jonson</span>
     </div>
    
@@ -54,21 +55,31 @@
 </div>
 
 
-<div class="portfolio">
-    <h1 class="text-center">Наша команда</h1>
+<div class="team">
     <div class="container">   
+    <h1 class="text-center">Наша команда</h1>
         <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-12">
-                <img src="public/css/buchgalter.jpg" class="img-fluid">
-                Главный бухгалтер
+            <div class="col-lg-4 col-md-4 col-sm-12 item">
+                <img src="public/css/buchgalter.jpg" class="img-fluid" alt="team">
+                <div class="des">
+                    Sara
+                </div>
+                <span class="text-muted">Manager</span>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-12">
-                <img src="public/css/logist.jpg" class="img-fluid">
-                Логист
+            
+            <div class="col-lg-4 col-md-4 col-sm-12 item">
+                <img src="public/css/logist.jpg" class="img-fluid" alt="team">
+                <div class="des">
+                Chris
+                </div>
+                <span class="text-muted">Logist</span>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-12">
-                <img src="public/css/dispetcher.jpg" class="img-fluid">
-                Диспетчер
+            <div class="col-lg-4 col-md-4 col-sm-12 item">
+                <img src="public/css/dispetcher.jpg" class="img-fluid" alt="team">
+                <div class="des">
+                Layla 
+                </div>
+                <span class="text-muted">Dispecher</span>
             </div>
         </div>
     </div>
