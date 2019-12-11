@@ -3,32 +3,29 @@ use App\Core\Dispatcher;
 /** @var string $title */
 ?>
 
-  <title><?= $title ?></title>
-  <!-- <link rel="stylesheet" href="public/css/style_home.css"> -->
-    <link rel="stylesheet" href="public/css/1.css">
 
+  <title><?= $title ?></title>
+  <link rel="stylesheet" href="public/css/style_home.css">
   
 <body>
-<!-- <h1><?= ($title) ?></h1> -->
-
-<div class="container" id="post-wrap" style="margin-top:30px">
-  <div class="row" id="post-item">
-    <div class="col-sm-8" id="item-content">
-    <div id="item-icon group"></div>
-      <div class="gruz" id="item-body"><h3>Доставка грузов </h3><br>
-      <div id="item-footer">
-      <a id="link" href="<?= Dispatcher::dispatcher()->encodeUri("orders/show", ['page' => 1]) ?>"><span>Оставить заказ</span></a>
-			</div>
-      </div>  
+<header class="header">
+<div class="overlay"></div>
+<div class="container">
+<div class="description">
+   <h3>
+    Hello ,Welcome To My officail Website
+    <p>
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <button class="btn btn-outline-secondary"><a href="<?= Dispatcher::dispatcher()->encodeUri("orders/show", ['page' => 1]) ?>" style="color: white">Оставить заказ</a></button>
+   </h3>
   </div>
-</div>
-</div>
+   </div>
+</header>
+  
 
 
 
-
-<br>
-<br>
 <!-- footer -->
 <footer class="footer">
 <div class="container bottom_border">
