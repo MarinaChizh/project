@@ -43,44 +43,42 @@ echo "</div>";
 
 ?>
 
-
-<!-- <div class='portfolio'>
-     <h1 class='text-center'>Portfolio</h1>
+<br>
+<br>
+<div class='portfolio'>
+     <h1 class='text-center'>Автопарк</h1>
     <div class='container'>
         <div class='row'>
             <div class='col-lg-4 col-md-4 col-sm-12'>
-                <img align='center' src='img/5440_multi-tier_2_1.jpg' class='img-fluid'>
+                <img align='center' src='public/img/5440_multi-tier_2_1.jpg' class='img-fluid'>
             </div>
             <div class='col-lg-4 col-md-4 col-sm-12'>
-                <img align='center' src='img/5440_multi-tier_2_1.jpg' class='img-fluid'>
+                <img align='center' src='public/img/5440_multi-tier_2_1.jpg' class='img-fluid'>
             </div>
-        </div>
-    </div>
-</div>
-   <div class="col-lg-4 col-md-4 col-sm-12">
-    <img align="center" src="img/5440_multi-tier_2_1.jpg" class="img-fluid">
+<div class="col-lg-4 col-md-4 col-sm-12">
+    <img align="center" src="public/img/5440_multi-tier_2_1.jpg" class="img-fluid">
    </div>
     <div class="col-lg-4 col-md-4 col-sm-12">
-    <img align="center" src="img/NAZ 7.jpg" class="img-fluid">
+    <img align="center" src="public/img/NAZ 7.jpg" class="img-fluid">
    </div>
    <div class="col-lg-4 col-md-4 col-sm-12">
-    <img align="center" src="img/s1200.webp" class="img-fluid">
+    <img align="center" src="public/img/s1200.webp" class="img-fluid">
    </div>
    <div class="col-lg-4 col-md-4 col-sm-12">
-    <img align="center" src="img/s12000.webp" class="img-fluid">
+    <img align="center" src="public/img/s12000.webp" class="img-fluid">
    </div>
-<div class="col-lg-4 col-md-4 col-sm-12">
-    <img align="center" src="img/5440_multi-tier_2_1.jpg" class="img-fluid">
-   </div>
-   <div class="col-lg-4 col-md-4 col-sm-12">
-    <img align="center" src="img/5440_multi-tier_2_1.jpg" class="img-fluid">
+    <div class="col-lg-4 col-md-4 col-sm-12">
+    <img align="center" src="public/img/5440_multi-tier_2_1.jpg" class="img-fluid">
    </div>
    <div class="col-lg-4 col-md-4 col-sm-12">
-    <img align="center" src="img/5440_multi-tier_2_1.jpg" class="img-fluid">
+    <img align="center" src="public/img/5440_multi-tier_2_1.jpg" class="img-fluid">
+   </div>
+   <div class="col-lg-4 col-md-4 col-sm-12">
+    <img align="center" src="public/img/5440_multi-tier_2_1.jpg" class="img-fluid">
    </div>
   </div>
  </div>
-</div> -->
+</div>
 
 
 <footer>

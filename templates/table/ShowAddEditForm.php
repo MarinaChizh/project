@@ -11,12 +11,12 @@
             <?php
                 foreach ($columnsNames as $name) {
                     if ($name != 'id') {
-                        echo "<label>"
+                        echo "<div><label>"
                         .(empty($tableHeaders[$name]) ? $name : $tableHeaders[$name])
                         ."<input type='text' class='form-control' name='"
                         .$name."' placeholder='"
                         .$name."' value='"
-                        .($editValues[$name] ?? '')."'></label><br/>";
+                        .($editValues[$name] ?? '')."'></label></div><br/>";
                     }
                 }
             ?>

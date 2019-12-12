@@ -11,7 +11,7 @@ class OrdersController extends AbstractTableController
 {
     protected $tableName = 'orders';
     protected $viewPatternsPath = 'templates/table/';
-    protected $pageSize = 3;
+    protected $pageSize = 5;
     protected $a = true;
     
     
