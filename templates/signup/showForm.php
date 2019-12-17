@@ -1,4 +1,5 @@
-<link rel="stylesheet" href="public/css/style_login.css">
+<link rel="stylesheet" href="public/css/style_loginform.css">
+
     <div>
         <?php
             foreach ($signUpErrors as $key => $value) {
@@ -6,19 +7,19 @@
             } 
         ?>
     </div>
-<div class="wrapper fadeInDown">
-    <div id="formContent">
-        <div class="fadeIn first">
+
+    <div class="loginform">
+        <div>
             <h3>Регистрация</h3>
         </div>
         <form action="<?= $SignUpURL ?>" method="POST">
-            <input type="text" name="name" value="<?= $newSignUpDate['name'] ?? '' ?>" placeholder = "Введите имя"> 
-            <input type="text" name="surname" value="<?= $newSignUpDate['surname'] ?? '' ?>" placeholder = "Введите фамилию">
-            <input type="text" name="login" value="<?= $newSignUpDate['login'] ?? '' ?>" placeholder = "Введите логин">
-            <input type="text" name="pass" placeholder = "Введите пароль">
-            <input type="text" name="passrepeat" placeholder = "Повторите пароль">         
-            <input type="submit" value="Регистрация"  class="fadeIn fourth">
+        <div class="form-group"><input class="form-control form-control-lg" type="text" name="name" value="<?= $newSignUpDate['name'] ?? '' ?>" placeholder = "Введите имя"></div>
+        <div class="form-group"><input class="form-control form-control-lg" type="text" name="surname" value="<?= $newSignUpDate['surname'] ?? '' ?>" placeholder = "Введите фамилию"></div>
+        <div class="form-group"><input class="form-control form-control-lg" type="text" name="login" value="<?= $newSignUpDate['login'] ?? '' ?>" placeholder = "Введите логин"></div>
+        <div class="form-group"><input class="form-control form-control-lg" type="text" name="pass" placeholder = "Введите пароль"></div>
+        <div class="form-group"><input class="form-control form-control-lg" type="text" name="passrepeat" placeholder = "Повторите пароль"></div>      
+        <div class="form-group"><input class="form-control form-control-lg" type="submit" value="Регистрация"  class="fadeIn fourth"></div>
         </form>
     </div>
-</div>
+
     

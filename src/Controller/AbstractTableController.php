@@ -33,7 +33,6 @@ abstract class AbstractTableController extends AbstractController
         $this->render("show", [
             'table' => $table->getPage($page),
             'pageCount' => $table->pageCount(),
-            // 'paginationLink' => '?t=' . $this->shortClassName() . '&a=Show&page=',
             'editLink' => Dispatcher::dispatcher()->encodeUri($this->shortClassName() . "/showeditform", ['id' => '']),
             'addLink' => Dispatcher::dispatcher()->encodeUri($this->shortClassName() . "/showaddform"),
             'delLink' => Dispatcher::dispatcher()->encodeUri($this->shortClassName() . "/delete", ['id' => '']),
@@ -43,11 +42,7 @@ abstract class AbstractTableController extends AbstractController
             'tableHeaders' => $this->table->getColumnsComments(),
             'deleteEditAccess' => ($_SESSION['user']['cod'] == 'adm')? true : false,
             'regist' => ($_SESSION['user']['cod'] == null)? true : false,
-            'addButton' => $this->addButton,
-            'a' => ($tableName == 'cars')? true : false
-            
-
-
+            'addButton' => $this->addButton,            
         ]);
     }
 
@@ -63,7 +58,6 @@ abstract class AbstractTableController extends AbstractController
             'columnsNames' => $this->table->getColumnsNames(),
             'editValues' => $this->table->get(['id' => $_GET['id']])[0],
             'URL' => '?t=' . $this->shortClassName() . '&a=Edit&id=' . $_GET['id'],
-            // 'URL' => Dispatcher::dispatcher()->encodeUri($this->shortClassName() . "/Edit", ['id' => $_GET['id']]),
             'tableHeaders' => $this->table->getColumnsComments()
         ]);
     }

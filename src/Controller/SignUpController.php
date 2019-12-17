@@ -21,13 +21,9 @@ class SignUpController extends AbstractController
         unset($_SESSION['checkSignUpData']);
 
         $this->render("showForm", [
-            // 'columnsNames' => $this->table->getColumnsNames(),
-            // 'editValues' => $this->table->get(['id' => $_GET['id']])[0],
             'SignUpURL' => '?t=' . $this->shortClassName() . '&a=registerUser',
             'newSignUpDate' => $newSignUpDate,
             'signUpErrors' => $signUpErrors,
-
-            // 'tableHeaders' => $this->table->getColumnsComments()
         ]);
     }
     public function actionRegisterUser()

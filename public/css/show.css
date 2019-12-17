@@ -6,17 +6,16 @@
 h2{
     text-align: center;
 }
-/*Portfolio*/
-.portfolio{
-    margin: 4em 0;
-       position: relative; 
-   }
-   .portfolio h1{
-    color:red;
-    margin: 2em; 
-   }
-   .portfolio img{
-     height: 15rem;
-     width: 100%;
-     margin: 1em;
-   }
+.buttons {
+    width: 20%;
+    /* color: #000000; */
+    /* background-color: #11a1b4; */
+    border: 3px solid #11a1b4;
+    text-decoration: none;
+    text-align: center;
+    }
+    
+   
+  
+
+    

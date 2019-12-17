@@ -3,25 +3,16 @@
 /** @var string $title */
 ?>
 <!-- <h1><?= ($title) ?></h1> -->
-<link rel="stylesheet" href="public/css/about.css">
-
-<style>
-.col-lg-4{
-    text-align:  center;
-}
-.our{
-    text-align:center;
-}
-</style>
+<link rel="stylesheet" href="public/css/style_about.css">
 
 <div class="row" id="about">
     <div class="col-lg-4 col-md-4 col-sm-12">
-        <img src="public/css/director.webp" class="img-fluid">
+        <img src="public/img/director.webp" class="img-fluid">
         <span class="text-justify">Director Mr.Jonson</span>
     </div>
    
     <div class="col-lg-8 col-md-8 col-sm-12 desc">
-        <h3><font color="#3AC1EF">▍TransLogist</font></h3>
+        <h3>TransLogist</h3>
         <p>
         Наша компания создана на основании приказа Министерства автомобильного транспорта №
         173от 3.12.1963 г. с 10 декабря 1963 года была организована Витебская
@@ -60,48 +51,31 @@
     <h1 class="text-center">Наша команда</h1>
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-12 item">
-                <img src="public/css/buchgalter.jpg" class="img-fluid" alt="team">
+                <img src="public/img/buchgalter.jpg" class="img-fluid" alt="team">
                 <div class="des">
-                    Sara
+                    Анастасия
                 </div>
                 <span class="text-muted">Manager</span>
             </div>
             
             <div class="col-lg-4 col-md-4 col-sm-12 item">
-                <img src="public/css/logist.jpg" class="img-fluid" alt="team">
+                <img src="public/img/logist.jpg" class="img-fluid" alt="team">
                 <div class="des">
-                Chris
+                Александр
                 </div>
                 <span class="text-muted">Logist</span>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12 item">
-                <img src="public/css/dispetcher.jpg" class="img-fluid" alt="team">
+                <img src="public/img/dispetcher.jpg" class="img-fluid" alt="team">
                 <div class="des">
-                Layla 
+                Ирина 
                 </div>
                 <span class="text-muted">Dispecher</span>
             </div>
         </div>
     </div>
 </div>
-<footer>
-<div class="container">
-<ul class="foote_bottom_ul_amrc">
-<li><a href="http://webenlance.com">Home</a></li>
-<li><a href="http://webenlance.com">About</a></li>
-</ul>
-<!--foote_bottom_ul_amrc ends here-->
-<p class="text-center">Copyright @2019 | Designed With by <a href="#">Your Company Name</a></p>
 
-<ul class="social_footer_ul">
-<li><a href="http://webenlance.com"><i class="fab fa-facebook-f"></i></a></li>
-<li><a href="http://webenlance.com"><i class="fab fa-twitter"></i></a></li>
-<li><a href="http://webenlance.com"><i class="fab fa-linkedin"></i></a></li>
-<li><a href="http://webenlance.com"><i class="fab fa-instagram"></i></a></li>
-</ul>
-<!--social_footer_ul ends here-->
-</div> 
-</footer>
   
   
 
