@@ -12,9 +12,9 @@ use App\Core\Dispatcher;
 
 
 <ul>
-<li><a href="<?= Dispatcher::dispatcher()->encodeUri("site/loginform") ?>"><i class="fa fa-facebook" aria-hidden="true"><img src="public/img/login_105181.png"></i></a></li>
-<li><a href="<?= Dispatcher::dispatcher()->encodeUri("signup/showform") ?>"><i class="fa fa-twitter" aria-hidden="true"><img src="public/img/editdocument_105148.png"></i></a></li>
-<li><a href="http://project/home"><i class="fa fa-google-plus" aria-hidden="true"><img src="public/img/homepage_80953.png"></i></a></li>
+<li><a href="<?= Dispatcher::dispatcher()->encodeUri("site/loginform") ?>"><img src="public/img/login_105181.png"></a></li>
+<li><a href="<?= Dispatcher::dispatcher()->encodeUri("signup/showform") ?>"><img src="public/img/editdocument_105148.png"></a></li>
+<li><a href="http://project/home"><img src="public/img/homepage_80953.png"></a></li>
 </ul>
 </div>
 

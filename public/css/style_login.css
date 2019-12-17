@@ -1,14 +1,13 @@
-/* BASIC */
-
-body {
- 
-    background-color: rgb(172, 168, 168);
-
+div {
+    border: 1px solid red;
+    
 }
-
+/* BASIC */
 body {
+  background-color: rgb(172, 168, 168);
   font-family: "Poppins", sans-serif;
   height: 100vh;
+  
 }
 
 a {
@@ -41,11 +40,10 @@ h2 {
   min-height: 100%;
   padding: 20px;
   margin: 6em 0;
-    position: relative;  
+  position: relative;  
 }
 
 #formContent {
-  -webkit-border-radius: 10px 10px 10px 10px;
   border-radius: 10px 10px 10px 10px;
   background: #fff;
   padding: 30px;
@@ -53,7 +51,6 @@ h2 {
   max-width: 450px;
   position: relative;
   padding: 0px;
-  -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
   box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
   text-align: center;
 }
@@ -63,22 +60,12 @@ h2 {
   border-top: 1px solid #dce8f1;
   padding: 25px;
   text-align: center;
-  -webkit-border-radius: 0 0 10px 10px;
   border-radius: 0 0 10px 10px;
 }
 
 
 
-/* TABS */
 
-h2.inactive {
-  color: #cccccc;
-}
-
-h2.active {
-  color: #0d0d0d;
-  border-bottom: 2px solid #5fbae9;
-}
 
 
 
